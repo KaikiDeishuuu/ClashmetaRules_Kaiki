@@ -1,0 +1,112 @@
+payload:
+  # ====== 广告拦截 ======
+  - DOMAIN,ad.com
+
+  # ====== Google / YouTube / 国际代理 ======
+  - DOMAIN-SUFFIX,google.com
+  - DOMAIN-KEYWORD,google
+  - DOMAIN-WILDCARD,*.google.com
+  - GEOSITE,youtube
+
+  # ====== 学术资源直连 ======
+  - DOMAIN-SUFFIX,sustech.edu.cn
+  - DOMAIN,sustech.edu.cn
+  - DOMAIN-SUFFIX,ieeexplore.ieee.org
+  - DOMAIN-SUFFIX,acs.org
+  - DOMAIN-SUFFIX,pubs.acs.org
+  - DOMAIN-SUFFIX,nature.com
+  - DOMAIN-SUFFIX,springernature.com
+  - DOMAIN-SUFFIX,science.org
+  - DOMAIN-SUFFIX,sciencemag.org
+  - DOMAIN-SUFFIX,wiley.com
+  - DOMAIN-SUFFIX,onlinelibrary.wiley.com
+  - DOMAIN-SUFFIX,elsevier.com
+  - DOMAIN-SUFFIX,sciencedirect.com
+  - DOMAIN-SUFFIX,springer.com
+  - DOMAIN-SUFFIX,link.springer.com
+  - DOMAIN-SUFFIX,mdpi.com
+  - DOMAIN-SUFFIX,tandfonline.com
+  - DOMAIN-SUFFIX,cnki.net
+  - DOMAIN-SUFFIX,wanfangdata.com.cn
+  - DOMAIN-SUFFIX,cqvip.com
+  - DOMAIN-SUFFIX,edu.cn
+  - DOMAIN-SUFFIX,ac.cn
+  - DOMAIN-SUFFIX,cas.cn
+  - DOMAIN-SUFFIX,optica.org
+
+  # ====== Others ======
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,tongyi.com
+
+  # ====== 中国 IP / 内网直连 ======
+  - GEOIP,CN
+  - SRC-GEOIP,cn
+
+  # ====== 香港银行直连 ======
+  - DOMAIN-SUFFIX,bochk.com
+  - DOMAIN-SUFFIX,za.group
+  - DOMAIN-SUFFIX,zabank.com
+  - DOMAIN-SUFFIX,hsbc.com.hk
+  - DOMAIN-SUFFIX,hangseng.com
+  - DOMAIN-SUFFIX,standardchartered.com.hk
+  - DOMAIN-SUFFIX,ocbcwhhk.com
+  - DOMAIN-SUFFIX,fubonbank.com.hk
+  - DOMAIN-SUFFIX,dbs.com.hk
+  - DOMAIN-SUFFIX,citibank.com.hk
+  - DOMAIN-SUFFIX,uob.com.hk
+
+  # ====== Bybit EU ======
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bybit.eu
+  - DOMAIN-SUFFIX,bytick.com
+  - PROCESS-NAME,Bybit.exe
+
+  # ====== N26 ======
+  - DOMAIN-SUFFIX,n26.com
+  - DOMAIN-SUFFIX,n26.io
+  - DOMAIN,api.tech26.de
+  - PROCESS-NAME,N26.exe
+
+  # ====== PayPal 德区 ======
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypalobjects.com
+  - GEOIP,DE
+  - PROCESS-NAME,PayPal.exe
+
+  # ====== 常见加密货币交易所 ======
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-SUFFIX,huobi.com
+  - DOMAIN-SUFFIX,kraken.com
+  - PROCESS-NAME,Binance.exe
+  - PROCESS-NAME,OKX.exe
+
+  # ====== OneDrive / Microsoft 直连 ======
+  - DOMAIN-SUFFIX,onedrive.live.com
+  - DOMAIN-SUFFIX,onedrive.com
+  - DOMAIN-SUFFIX,livefilestore.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,sharepoint-df.com
+  - DOMAIN-SUFFIX,storage.live.com
+  - DOMAIN-SUFFIX,msedge.net
+  - DOMAIN-SUFFIX,officeapps.live.com
+  - IP-CIDR,13.107.0.0/16,no-resolve
+  - IP-CIDR,204.79.197.0/24,no-resolve
+
+  # ====== OriginLab ======
+  - DOMAIN-SUFFIX,originlab.com
+  - DOMAIN-SUFFIX,origin.com
+  - DOMAIN-SUFFIX,originlabcloud.com
+  - DOMAIN-SUFFIX,originlab.net
+  - DOMAIN-SUFFIX,originlabcdn.com
+  - DOMAIN-SUFFIX,originlab-support.com
+  - DOMAIN-SUFFIX,originlab-services.com
+  - DOMAIN,activation.originlab.com
+  - DOMAIN,key.originlab.com
+  - DOMAIN,license.originlab.com
+  - DOMAIN,update.originlab.com
+  - DOMAIN,cloud.originlab.com
+  - DOMAIN,app-data.originlab.com
+  - IP-CIDR,50.204.0.0/16,no-resolve
+  - IP-CIDR,66.135.32.0/19,no-resolve
