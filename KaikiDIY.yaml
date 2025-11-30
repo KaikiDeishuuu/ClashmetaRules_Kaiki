@@ -1,112 +1,105 @@
 payload:
   # ====== 广告拦截 ======
-  - DOMAIN,ad.com
-
-  # ====== Google / YouTube / 国际代理 ======
-  - DOMAIN-SUFFIX,google.com
-  - DOMAIN-KEYWORD,google
-  - DOMAIN-WILDCARD,*.google.com
-  - GEOSITE,youtube
+  - DOMAIN,ad.com,REJECT
 
   # ====== 学术资源直连 ======
-  - DOMAIN-SUFFIX,sustech.edu.cn
-  - DOMAIN,sustech.edu.cn
-  - DOMAIN-SUFFIX,ieeexplore.ieee.org
-  - DOMAIN-SUFFIX,acs.org
-  - DOMAIN-SUFFIX,pubs.acs.org
-  - DOMAIN-SUFFIX,nature.com
-  - DOMAIN-SUFFIX,springernature.com
-  - DOMAIN-SUFFIX,science.org
-  - DOMAIN-SUFFIX,sciencemag.org
-  - DOMAIN-SUFFIX,wiley.com
-  - DOMAIN-SUFFIX,onlinelibrary.wiley.com
-  - DOMAIN-SUFFIX,elsevier.com
-  - DOMAIN-SUFFIX,sciencedirect.com
-  - DOMAIN-SUFFIX,springer.com
-  - DOMAIN-SUFFIX,link.springer.com
-  - DOMAIN-SUFFIX,mdpi.com
-  - DOMAIN-SUFFIX,tandfonline.com
-  - DOMAIN-SUFFIX,cnki.net
-  - DOMAIN-SUFFIX,wanfangdata.com.cn
-  - DOMAIN-SUFFIX,cqvip.com
-  - DOMAIN-SUFFIX,edu.cn
-  - DOMAIN-SUFFIX,ac.cn
-  - DOMAIN-SUFFIX,cas.cn
-  - DOMAIN-SUFFIX,optica.org
+  - DOMAIN-SUFFIX,sustech.edu.cn,DIRECT
+  - DOMAIN,sustech.edu.cn,DIRECT
+  - DOMAIN-SUFFIX,ieeexplore.ieee.org,DIRECT
+  - DOMAIN-SUFFIX,acs.org,DIRECT
+  - DOMAIN-SUFFIX,pubs.acs.org,DIRECT
+  - DOMAIN-SUFFIX,sso.acs.org,DIRECT
+  - DOMAIN-SUFFIX,pubstr.acs.org,DIRECT
+  - DOMAIN-SUFFIX,sso.acs.org,DIRECT
+  - DOMAIN-SUFFIX,pubstr.acs.org,DIRECT
+  - DOMAIN-SUFFIX,nature.com,DIRECT
+  - DOMAIN-SUFFIX,springernature.com,DIRECT
+  - DOMAIN-SUFFIX,science.org,DIRECT
+  - DOMAIN-SUFFIX,sciencemag.org,DIRECT
+  - DOMAIN-SUFFIX,wiley.com,DIRECT
+  - DOMAIN-SUFFIX,onlinelibrary.wiley.com,DIRECT
+  - DOMAIN-SUFFIX,elsevier.com,DIRECT
+  - DOMAIN-SUFFIX,sciencedirect.com,DIRECT
+  - DOMAIN-SUFFIX,springer.com,DIRECT
+  - DOMAIN-SUFFIX,link.springer.com,DIRECT
+  - DOMAIN-SUFFIX,mdpi.com,DIRECT
+  - DOMAIN-SUFFIX,tandfonline.com,DIRECT
+  - DOMAIN-SUFFIX,cnki.net,DIRECT
+  - DOMAIN-SUFFIX,wanfangdata.com.cn,DIRECT
+  - DOMAIN-SUFFIX,cqvip.com,DIRECT
+  - DOMAIN-SUFFIX,edu.cn,DIRECT
+  - DOMAIN-SUFFIX,ac.cn,DIRECT
+  - DOMAIN-SUFFIX,cas.cn,DIRECT
+  - DOMAIN-SUFFIX,optica.org,DIRECT
 
   # ====== Others ======
-  - DOMAIN-SUFFIX,bing.com
-  - DOMAIN-SUFFIX,microsoft.com
-  - DOMAIN-SUFFIX,tongyi.com
-
-  # ====== 中国 IP / 内网直连 ======
-  - GEOIP,CN
-  - SRC-GEOIP,cn
+  - DOMAIN-SUFFIX,bing.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,tongyi.com,DIRECT
 
   # ====== 香港银行直连 ======
-  - DOMAIN-SUFFIX,bochk.com
-  - DOMAIN-SUFFIX,za.group
-  - DOMAIN-SUFFIX,zabank.com
-  - DOMAIN-SUFFIX,hsbc.com.hk
-  - DOMAIN-SUFFIX,hangseng.com
-  - DOMAIN-SUFFIX,standardchartered.com.hk
-  - DOMAIN-SUFFIX,ocbcwhhk.com
-  - DOMAIN-SUFFIX,fubonbank.com.hk
-  - DOMAIN-SUFFIX,dbs.com.hk
-  - DOMAIN-SUFFIX,citibank.com.hk
-  - DOMAIN-SUFFIX,uob.com.hk
+  - DOMAIN-SUFFIX,bochk.com,DIRECT
+  - DOMAIN-SUFFIX,za.group,DIRECT
+  - DOMAIN-SUFFIX,zabank.com,DIRECT
+  - DOMAIN-SUFFIX,hsbc.com.hk,DIRECT
+  - DOMAIN-SUFFIX,hangseng.com,DIRECT
+  - DOMAIN-SUFFIX,standardchartered.com.hk,DIRECT
+  - DOMAIN-SUFFIX,ocbcwhhk.com,DIRECT
+  - DOMAIN-SUFFIX,fubonbank.com.hk,DIRECT
+  - DOMAIN-SUFFIX,dbs.com.hk,DIRECT
+  - DOMAIN-SUFFIX,citibank.com.hk,DIRECT
+  - DOMAIN-SUFFIX,uob.com.hk,DIRECT
 
   # ====== Bybit EU ======
-  - DOMAIN-SUFFIX,bybit.com
-  - DOMAIN-SUFFIX,bybit.eu
-  - DOMAIN-SUFFIX,bytick.com
-  - PROCESS-NAME,Bybit.exe
+  - DOMAIN-SUFFIX,bybit.com,全球代理
+  - DOMAIN-SUFFIX,bybit.eu,全球代理
+  - DOMAIN-SUFFIX,bytick.com,全球代理
+  - PROCESS-NAME,Bybit.exe,全球代理
 
   # ====== N26 ======
-  - DOMAIN-SUFFIX,n26.com
-  - DOMAIN-SUFFIX,n26.io
-  - DOMAIN,api.tech26.de
-  - PROCESS-NAME,N26.exe
+  - DOMAIN-SUFFIX,n26.com,全球代理
+  - DOMAIN-SUFFIX,n26.io,全球代理
+  - DOMAIN,api.tech26.de,全球代理
+  - PROCESS-NAME,N26.exe,全球代理
 
   # ====== PayPal 德区 ======
-  - DOMAIN-SUFFIX,paypal.com
-  - DOMAIN-SUFFIX,paypalobjects.com
-  - GEOIP,DE
-  - PROCESS-NAME,PayPal.exe
+  - DOMAIN-SUFFIX,paypal.com,全球代理
+  - DOMAIN-SUFFIX,paypalobjects.com,全球代理
+  - PROCESS-NAME,PayPal.exe,全球代理
 
   # ====== 常见加密货币交易所 ======
-  - DOMAIN-SUFFIX,binance.com
-  - DOMAIN-SUFFIX,okx.com
-  - DOMAIN-SUFFIX,huobi.com
-  - DOMAIN-SUFFIX,kraken.com
-  - PROCESS-NAME,Binance.exe
-  - PROCESS-NAME,OKX.exe
+  - DOMAIN-SUFFIX,binance.com,全球代理
+  - DOMAIN-SUFFIX,okx.com,全球代理
+  - DOMAIN-SUFFIX,huobi.com,全球代理
+  - DOMAIN-SUFFIX,kraken.com,全球代理
+  - PROCESS-NAME,Binance.exe,全球代理
+  - PROCESS-NAME,OKX.exe,全球代理
 
   # ====== OneDrive / Microsoft 直连 ======
-  - DOMAIN-SUFFIX,onedrive.live.com
-  - DOMAIN-SUFFIX,onedrive.com
-  - DOMAIN-SUFFIX,livefilestore.com
-  - DOMAIN-SUFFIX,sharepoint.com
-  - DOMAIN-SUFFIX,sharepoint-df.com
-  - DOMAIN-SUFFIX,storage.live.com
-  - DOMAIN-SUFFIX,msedge.net
-  - DOMAIN-SUFFIX,officeapps.live.com
-  - IP-CIDR,13.107.0.0/16,no-resolve
-  - IP-CIDR,204.79.197.0/24,no-resolve
+  - DOMAIN-SUFFIX,onedrive.live.com,DIRECT
+  - DOMAIN-SUFFIX,onedrive.com,DIRECT
+  - DOMAIN-SUFFIX,livefilestore.com,DIRECT
+  - DOMAIN-SUFFIX,sharepoint.com,DIRECT
+  - DOMAIN-SUFFIX,sharepoint-df.com,DIRECT
+  - DOMAIN-SUFFIX,storage.live.com,DIRECT
+  - DOMAIN-SUFFIX,msedge.net,DIRECT
+  - DOMAIN-SUFFIX,officeapps.live.com,DIRECT
+  - IP-CIDR,13.107.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,204.79.197.0/24,DIRECT,no-resolve
 
   # ====== OriginLab ======
-  - DOMAIN-SUFFIX,originlab.com
-  - DOMAIN-SUFFIX,origin.com
-  - DOMAIN-SUFFIX,originlabcloud.com
-  - DOMAIN-SUFFIX,originlab.net
-  - DOMAIN-SUFFIX,originlabcdn.com
-  - DOMAIN-SUFFIX,originlab-support.com
-  - DOMAIN-SUFFIX,originlab-services.com
-  - DOMAIN,activation.originlab.com
-  - DOMAIN,key.originlab.com
-  - DOMAIN,license.originlab.com
-  - DOMAIN,update.originlab.com
-  - DOMAIN,cloud.originlab.com
-  - DOMAIN,app-data.originlab.com
-  - IP-CIDR,50.204.0.0/16,no-resolve
-  - IP-CIDR,66.135.32.0/19,no-resolve
+  - DOMAIN-SUFFIX,originlab.com,DIRECT
+  - DOMAIN-SUFFIX,origin.com,DIRECT
+  - DOMAIN-SUFFIX,originlabcloud.com,DIRECT
+  - DOMAIN-SUFFIX,originlab.net,DIRECT
+  - DOMAIN-SUFFIX,originlabcdn.com,DIRECT
+  - DOMAIN-SUFFIX,originlab-support.com,DIRECT
+  - DOMAIN-SUFFIX,originlab-services.com,DIRECT
+  - DOMAIN,activation.originlab.com,DIRECT
+  - DOMAIN,key.originlab.com,DIRECT
+  - DOMAIN,license.originlab.com,DIRECT
+  - DOMAIN,update.originlab.com,DIRECT
+  - DOMAIN,cloud.originlab.com,DIRECT
+  - DOMAIN,app-data.originlab.com,DIRECT
+  - IP-CIDR,50.204.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,66.135.32.0/19,DIRECT,no-resolve
