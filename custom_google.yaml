@@ -1,0 +1,18 @@
+# 自定义 Google/YouTube 规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_google.yaml
+
+payload:
+  - '+.google.com'
+  - '+.googleapis.com'
+  - '+.googleusercontent.com'
+  - '+.gstatic.com'
+  - '+.youtube.com'
+  - '+.ytimg.com'
+  - '+.googlevideo.com'
+  - '+.gmail.com'
+  - '+.googleadservices.com'
+  - '+.googletagmanager.com'
+  - '+.recaptcha.net'
+  - '+.ggpht.com'
+  - '+.google.cn'
+  - '+.googledomains.com'

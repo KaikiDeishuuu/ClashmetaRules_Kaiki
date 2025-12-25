@@ -1,0 +1,102 @@
+# 自定义直连规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_direct.yaml
+
+payload:
+  # ====== 中国学术资源 ======
+  - '+.edu.cn'
+  - '+.ac.cn'
+  - '+.cas.cn'
+  - '+.cnki.net'
+  - '+.wanfangdata.com.cn'
+  - '+.cqvip.com'
+
+  # ====== 国际学术资源（校园网有订阅）======
+  - '+.ieee.org'
+  - '+.acs.org'
+  - '+.nature.com'
+  - '+.springernature.com'
+  - '+.springer.com'
+  - '+.science.org'
+  - '+.sciencemag.org'
+  - '+.wiley.com'
+  - '+.elsevier.com'
+  - '+.sciencedirect.com'
+  - '+.mdpi.com'
+  - '+.tandfonline.com'
+  - '+.optica.org'
+  - '+.rsc.org'
+  - '+.embs.org'
+  - '+.acm.org'
+  - '+.arxiv.org'
+
+  # ====== 邮件服务 ======
+  - '+.163.com'
+  - '+.126.com'
+  - '+.yeah.net'
+  - '+.foxmail.com'
+  - '+.outlook.com'
+  - '+.hotmail.com'
+  - '+.live.com'
+  - '+.me.com'
+
+  # ====== Apple 服务 ======
+  - '+.apple.com'
+  - '+.apple-cloudkit.com'
+  - '+.appstore.com'
+  - '+.applemusic.com'
+  - '+.apple-dns.net'
+  - '+.cdn-apple.com'
+  - '+.mzstatic.com'
+
+  # ====== 香港服务 ======
+  - '+.bochk.com'
+  - '+.zabank.com'
+  - '+.za.group'
+  - '+.hsbc.com.hk'
+  - '+.hangseng.com'
+  - '+.standardchartered.com.hk'
+  - '+.dbs.com.hk'
+  - '+.citibank.com.hk'
+  - '+.uob.com.hk'
+  - '+.ocbcwhhk.com'
+  - '+.fubonbank.com.hk'
+  - '+.hktvmall.com'
+  - '+.octopus.com.hk'
+  - '+.alipay.hk'
+
+  # ====== Wise ======
+  - '+.wise.com'
+  - '+.transferwise.com'
+
+  # ====== Microsoft / OneDrive ======
+  - '+.onedrive.com'
+  - '+.sharepoint.com'
+  - '+.livefilestore.com'
+  - '+.officeapps.live.com'
+  - '+.office.com'
+  - '+.office365.com'
+  - '+.microsoft.com'
+  - '+.microsoftonline.com'
+  - '+.msedge.net'
+  - '+.windows.net'
+  - '+.bing.com'
+
+  # ====== OriginLab ======
+  - '+.originlab.com'
+  - '+.originlabcloud.com'
+  - '+.originlab.net'
+
+  # ====== 国内服务 ======
+  - '+.tongyi.com'
+  - '+.aliyun.com'
+  - '+.taobao.com'
+  - '+.tmall.com'
+  - '+.jd.com'
+  - '+.qq.com'
+  - '+.wechat.com'
+  - '+.bilibili.com'
+  - '+.douyin.com'
+  - '+.toutiao.com'
+  - '+.baidu.com'
+  - '+.zhihu.com'
+  - '+.maxim.com.cn'

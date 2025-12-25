@@ -1,0 +1,60 @@
+# 自定义代理规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_proxy.yaml
+
+payload:
+  # ====== iCloud (VLESS Reality) ======
+  - '+.icloud.com'
+  - '+.icloud-content.com'
+
+  # ====== 学术资源代理 ======
+  - 'verify.nature.com'
+  - 'fed-libs.nature.com'
+  - 'cmp.nature.com'
+  - '+.researchgate.net'
+  - '+.semanticscholar.org'
+  - '+.sci-hub.se'
+  - '+.sci-hub.st'
+
+  # ====== GitHub ======
+  - '+.github.com'
+  - '+.githubusercontent.com'
+  - '+.githubassets.com'
+  - '+.github.io'
+  - '+.ghcr.io'
+  - '+.githubapp.com'
+  - '+.githubnext.com'
+
+  # ====== AI 服务 ======
+  - '+.openai.com'
+  - '+.ai.com'
+  - '+.chatgpt.com'
+  - '+.anthropic.com'
+  - '+.claude.ai'
+  - '+.perplexity.ai'
+  - '+.poe.com'
+  - '+.suno.ai'
+  - '+.midjourney.com'
+
+  # ====== 开发工具 ======
+  - '+.docker.com'
+  - '+.docker.io'
+  - '+.npmjs.com'
+  - '+.npmjs.org'
+  - '+.pypi.org'
+  - '+.pythonhosted.org'
+  - '+.stackoverflow.com'
+  - '+.stackexchange.com'
+  - '+.v2ex.com'
+
+  # ====== 加密货币交易所 ======
+  - '+.bybit.com'
+  - '+.bytick.com'
+  - '+.binance.com'
+  - '+.binance.us'
+  - '+.okx.com'
+  - '+.huobi.com'
+  - '+.kraken.com'
+  - '+.coinbase.com'
+  - '+.gate.io'
+  - '+.kucoin.com'
+  - '+.crypto.com'

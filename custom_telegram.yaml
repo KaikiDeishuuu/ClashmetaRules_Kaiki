@@ -1,0 +1,11 @@
+# 自定义 Telegram 规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_telegram.yaml
+
+payload:
+  - '+.telegram.org'
+  - '+.t.me'
+  - '+.tdesktop.com'
+  - '+.telegra.ph'
+  - '+.tx.me'
+  - '+.telegram.me'
+  - '+.telesco.pe'

@@ -1,0 +1,11 @@
+# 自定义德国服务规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_germany.yaml
+
+payload:
+  - 'api.tech26.de'
+  - '+.n26.com'
+  - '+.n26.io'
+  - '+.bybit.eu'
+  - '+.paypal.de'
+  - '+.paypal.com'
+  - '+.paypalobjects.com'
