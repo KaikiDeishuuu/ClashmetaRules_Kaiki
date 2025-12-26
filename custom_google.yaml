@@ -2,6 +2,8 @@
 # URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_google.yaml
 
 payload:
+  # Gmail 邮件服务（优先级高于通配符）
+  - 'mail.google.com'
   - '+.google.com'
   - '+.googleapis.com'
   - '+.googleusercontent.com'
