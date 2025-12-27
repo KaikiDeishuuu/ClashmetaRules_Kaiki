@@ -81,6 +81,11 @@ payload:
   - '+.windows.net'
   - '+.bing.com'
 
+  # ====== Dell ======
+  - '+.dell.com'
+  - '+.dell.com.cn'
+  - '+.delltechnologies.com'
+
   # ====== OriginLab ======
   - '+.originlab.com'
   - '+.originlabcloud.com'
