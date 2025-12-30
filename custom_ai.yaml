@@ -1,0 +1,74 @@
+payload:
+  # ====== OpenAI / ChatGPT ======
+  - '+.openai.com'
+  - '+.chatgpt.com'
+  - '+.oaistatic.com'
+  - '+.oaiusercontent.com'
+  - '+.openaiapi-site.azureedge.net'
+  - 'chat.openai.com.cdn.cloudflare.net'
+  - 'openaicom.imgix.net'
+  - 'openaicomproductionae4b.blob.core.windows.net'
+  
+  # ====== Anthropic / Claude ======
+  - '+.anthropic.com'
+  - '+.claude.ai'
+  
+  # ====== xAI / Grok ======
+  - '+.x.ai'
+  - '+.grok.com'
+  - '+.xai.com'
+  
+  # ====== Perplexity ======
+  - '+.perplexity.ai'
+  
+  # ====== Mistral ======
+  - '+.mistral.ai'
+  
+  # ====== Cohere ======
+  - '+.cohere.ai'
+  - '+.cohere.com'
+  
+  # ====== Meta AI / Llama ======
+  - '+.meta.ai'
+  - '+.llama.meta.com'
+  
+  # ====== Inflection / Pi ======
+  - '+.inflection.ai'
+  - '+.pi.ai'
+  
+  # ====== Poe ======
+  - '+.poe.com'
+  
+  # ====== Character.AI ======
+  - '+.character.ai'
+  
+  # ====== Hugging Face ======
+  - '+.huggingface.co'
+  - '+.hf.co'
+  
+  # ====== Stability AI ======
+  - '+.stability.ai'
+  
+  # ====== Midjourney ======
+  - '+.midjourney.com'
+  
+  # ====== Suno AI ======
+  - '+.suno.ai'
+  - '+.suno.com'
+  
+  # ====== Runway ======
+  - '+.runwayml.com'
+  
+  # ====== Copy.ai ======
+  - '+.copy.ai'
+  
+  # ====== Jasper ======
+  - '+.jasper.ai'
+  
+  # ====== Cursor ======
+  - '+.cursor.com'
+  - '+.cursor.sh'
+  
+  # ====== GitHub Copilot ======
+  - '+.githubcopilot.com'
+  - 'copilot-proxy.githubusercontent.com'
