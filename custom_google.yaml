@@ -1,7 +1,16 @@
 # 自定义 Google/YouTube 规则集
 # URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_google.yaml
+# 
+# Google Play 下载修复说明：
+# - *.googleapis.com 必须走 proxy
+# - services.googleapis.cn 和 *.xn--ngstr-lra8j.com 保持策略一致（都走 proxy 或都走 direct）
+# - 当前配置：全部走 proxy（推荐方案）
 
 payload:
+  # Google Play 下载关键域名（解决等待中问题）
+  - 'services.googleapis.cn'
+  - '+.xn--ngstr-lra8j.com'
+  
   # Gmail 邮件服务（优先级高于通配符）
   - 'mail.google.com'
   - '+.google.com'
