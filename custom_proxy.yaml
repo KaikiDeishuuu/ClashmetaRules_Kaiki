@@ -35,6 +35,10 @@ payload:
   - '+.suno.ai'
   - '+.midjourney.com'
 
+  # ====== 沉浸式翻译 ======
+  - '+.immersivetranslate.cn'
+  - '+.immersivetranslate.com'
+
   # ====== 开发工具 ======
   - '+.docker.com'
   - '+.docker.io'

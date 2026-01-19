@@ -27,3 +27,7 @@ payload:
   - '+.ggpht.com'
   - '+.google.cn'
   - '+.googledomains.com'
+  
+  # Antigravity - Google 实验性服务
+  - 'antigravity.google.com'
+  - 'antigravity.google'
