@@ -5,29 +5,64 @@
 # - *.googleapis.com 必须走 proxy
 # - services.googleapis.cn 和 *.xn--ngstr-lra8j.com 保持策略一致（都走 proxy 或都走 direct）
 # - 当前配置：全部走 proxy（推荐方案）
+#
+# 【关键修复 2025-02-28】
+# doubleclick.net 不含 "google" 关键词，原先会穿透到 Loyalsoldier reject 规则 → REJECT
+# Google 搜索页面 JS 等待 doubleclick.net 响应，遇到 REJECT 后一直转圈
+# 同样受影响：google-analytics.com, googleoptimize.com（在 reject 列表中）
 
 payload:
-  # Google Play 下载关键域名（解决等待中问题）
+  # ── Google Play 下载关键域名 ────────────────────────────────────────────
   - 'services.googleapis.cn'
   - '+.xn--ngstr-lra8j.com'
-  
-  # Gmail 邮件服务（优先级高于通配符）
+
+  # ── 【关键】Google 搜索页面依赖的广告/追踪域名 ─────────────────────────
+  # 这些域名在 Loyalsoldier reject 列表中，但同时是 Google 搜索页面的必要依赖
+  # 必须放在 reject 规则之前捕获，否则搜索页面永远转圈
+  - '+.doubleclick.net'          # Google 广告竞价 / 搜索点击追踪（最关键！）
+  - '+.doubleclick.com'
+  - '+.google-analytics.com'    # Google Analytics（被 reject 列表覆盖）
+  - '+.googleoptimize.com'      # Google Optimize（被 reject 列表覆盖）
+  - '+.ampproject.org'          # Google AMP（搜索结果使用）
+  - '+.amp.dev'
+
+  # ── reCAPTCHA（搜索页人机验证）──────────────────────────────────────────
+  - '+.recaptcha.net'
+  - 'recaptcha.google.com'
+
+  # ── Gmail 邮件服务 ───────────────────────────────────────────────────────
   - 'mail.google.com'
+  - '+.gmail.com'
+
+  # ── Google 核心服务 ──────────────────────────────────────────────────────
   - '+.google.com'
   - '+.googleapis.com'
   - '+.googleusercontent.com'
   - '+.gstatic.com'
+  - '+.google.cn'
+  - '+.googledomains.com'
+
+  # ── YouTube ──────────────────────────────────────────────────────────────
   - '+.youtube.com'
   - '+.ytimg.com'
   - '+.googlevideo.com'
-  - '+.gmail.com'
+  - '+.youtu.be'
+  - '+.yt.be'
+
+  # ── Google 广告 / Tag 服务 ───────────────────────────────────────────────
   - '+.googleadservices.com'
+  - '+.googlesyndication.com'
   - '+.googletagmanager.com'
-  - '+.recaptcha.net'
+  - '+.googletagservices.com'
+
+  # ── 其他 Google 旗下域名 ─────────────────────────────────────────────────
   - '+.ggpht.com'
-  - '+.google.cn'
-  - '+.googledomains.com'
-  
+  - '+.withgoogle.com'
+  - '+.googleblog.com'
+  - '+.googleapps.com'
+  - '+.googlefonts.com'
+  - '+.gemini.google.com'
+
   # Antigravity - Google 实验性服务
   - 'antigravity.google.com'
   - 'antigravity.google'
