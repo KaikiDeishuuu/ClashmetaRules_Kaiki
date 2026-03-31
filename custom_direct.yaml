@@ -105,3 +105,9 @@ payload:
   - '+.baidu.com'
   - '+.zhihu.com'
   - '+.maxim.com.cn'
+
+  # ====== Hetzner ======
+  - '+.hetzner.com'
+  - '+.hetzner.cloud'
+  - '+.hetzner.de'
+  - '+.hetzner.app'
