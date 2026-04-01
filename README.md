@@ -11,6 +11,7 @@
 | custom_google.yaml | Google/YouTube 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_google.yaml) |
 | custom_telegram.yaml | Telegram 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_telegram.yaml) |
 | custom_germany.yaml | 德国服务规则（N26、PayPal等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_germany.yaml) |
+| custom_reject.yaml | 拦截规则（Windows 更新等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_reject.yaml) |
 
 ## 使用方法
 
@@ -52,12 +53,20 @@ rule-providers:
     url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_germany.yaml
     path: ./ruleset/custom_germany.yaml
     interval: 86400
+
+  custom_reject:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_reject.yaml
+    path: ./ruleset/custom_reject.yaml
+    interval: 86400
 ```
 
 在 `rules` 中引用：
 
 ```yaml
 rules:
+  - RULE-SET,custom_reject,REJECT
   - RULE-SET,custom_telegram,TG
   - RULE-SET,custom_google,Google
   - RULE-SET,custom_germany,德国服务
