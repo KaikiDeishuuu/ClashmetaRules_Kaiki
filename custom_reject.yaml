@@ -2,7 +2,9 @@
 # URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_reject.yaml
 
 payload:
-  # ====== Windows Update ======
+  # ====== Windows Update & Telemetry ======
   - '+.windowsupdate.microsoft.com'
   - '+.update.microsoft.com'
   - '+.download.windowsupdate.com'
+  - '+.fe2.update.microsoft.com'
+  - '+.mobile.events.data.microsoft.com'
