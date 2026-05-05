@@ -6,6 +6,15 @@ payload:
   - '+.icloud.com'
   - '+.icloud-content.com'
 
+  # ====== Apple 服务 ======
+  - '+.apple.com'
+  - '+.apple-cloudkit.com'
+  - '+.appstore.com'
+  - '+.applemusic.com'
+  - '+.apple-dns.net'
+  - '+.cdn-apple.com'
+  - '+.mzstatic.com'
+
   # ====== 学术资源代理 ======
   - 'verify.nature.com'
   - 'fed-libs.nature.com'
@@ -34,6 +43,12 @@ payload:
   - '+.poe.com'
   - '+.suno.ai'
   - '+.midjourney.com'
+  # ====== OpenAI / ChatGPT 额外补充 ======
+  - '+.api.openai.com'
+  - '+.chat.openai.com'
+  - '+.openaiapis.com'
+  - '+.openai.cn'
+  - '+.gpt.openai.com'
 
   # ====== 沉浸式翻译 ======
   - '+.immersivetranslate.cn'

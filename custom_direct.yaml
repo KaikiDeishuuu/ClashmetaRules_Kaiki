@@ -39,15 +39,6 @@ payload:
   - '+.live.com'
   - '+.me.com'
 
-  # ====== Apple 服务 ======
-  - '+.apple.com'
-  - '+.apple-cloudkit.com'
-  - '+.appstore.com'
-  - '+.applemusic.com'
-  - '+.apple-dns.net'
-  - '+.cdn-apple.com'
-  - '+.mzstatic.com'
-
   # ====== 香港服务 ======
   - '+.bochk.com'
   - '+.zabank.com'
