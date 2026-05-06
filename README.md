@@ -8,6 +8,7 @@
 |--------|------|----------|
 | custom_direct.yaml | 直连规则（学术、邮件、香港银行、微软等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_direct.yaml) |
 | custom_proxy.yaml | 代理规则（GitHub、AI、开发工具、加密货币等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_proxy.yaml) |
+| custom_apple.yaml | Apple 规则（iCloud、App Store、Apple Music 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_apple.yaml) |
 | custom_google.yaml | Google/YouTube 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_google.yaml) |
 | custom_telegram.yaml | Telegram 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_telegram.yaml) |
 | custom_germany.yaml | 德国服务规则（N26、PayPal等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_germany.yaml) |
@@ -31,6 +32,13 @@ rule-providers:
     behavior: domain
     url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_proxy.yaml
     path: ./ruleset/custom_proxy.yaml
+    interval: 86400
+
+  custom_apple:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_apple.yaml
+    path: ./ruleset/custom_apple.yaml
     interval: 86400
 
   custom_google:
@@ -68,6 +76,7 @@ rule-providers:
 rules:
   - RULE-SET,custom_reject,REJECT
   - RULE-SET,custom_telegram,TG
+  - RULE-SET,custom_apple,全球代理
   - RULE-SET,custom_google,Google
   - RULE-SET,custom_germany,德国服务
   - RULE-SET,custom_proxy,全球代理

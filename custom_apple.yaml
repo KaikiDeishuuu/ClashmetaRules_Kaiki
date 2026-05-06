@@ -1,0 +1,18 @@
+# 自定义 Apple 规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_apple.yaml
+
+payload:
+  - 'www.icloud.com'
+
+  # ====== iCloud ======
+  - '+.icloud.com'
+  - '+.icloud-content.com'
+
+  # ====== Apple 服务 ======
+  - '+.apple.com'
+  - '+.apple-cloudkit.com'
+  - '+.appstore.com'
+  - '+.applemusic.com'
+  - '+.apple-dns.net'
+  - '+.cdn-apple.com'
+  - '+.mzstatic.com'
