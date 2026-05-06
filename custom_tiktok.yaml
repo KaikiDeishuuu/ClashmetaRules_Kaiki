@@ -4,9 +4,24 @@
 payload:
   - '+.tiktok.com'
   - '+.tiktokv.com'
-  - '+.tiktokcdn.com'
+  - '+.tiktokv.eu'
   - '+.tiktokcdn-us.com'
   - '+.tiktokv.us'
+  - '+.tiktokcdn.com'
+  - '+.tiktokcdn-eu.com'
   - '+.musical.ly'
+
+  # ByteDance / TikTok overseas resources
   - '+.byteoversea.com'
+  - '+.byteoversea.net'
   - '+.ibytedtos.com'
+  - '+.ibyteimg.com'
+  - '+.byteimg.com'
+  - '+.bytecdn.cn'
+  - '+.bytedance.com'
+  - '+.bytedance.net'
+
+  # 常见资源/CDN/日志域
+  - '+.snssdk.com'
+  - '+.amemv.com'
+  - '+.pstatp.com'
