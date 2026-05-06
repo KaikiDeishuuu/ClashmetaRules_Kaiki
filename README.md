@@ -11,6 +11,7 @@
 | custom_apple.yaml | Apple 规则（iCloud、App Store、Apple Music 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_apple.yaml) |
 | custom_google.yaml | Google/YouTube 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_google.yaml) |
 | custom_telegram.yaml | Telegram 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_telegram.yaml) |
+| custom_tiktok.yaml | TikTok 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_tiktok.yaml) |
 | custom_germany.yaml | 德国服务规则（N26、PayPal等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_germany.yaml) |
 | custom_reject.yaml | 拦截规则（Windows 更新等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_reject.yaml) |
 
@@ -48,6 +49,13 @@ rule-providers:
     path: ./ruleset/custom_google.yaml
     interval: 86400
 
+  custom_tiktok:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_tiktok.yaml
+    path: ./ruleset/custom_tiktok.yaml
+    interval: 86400
+
   custom_telegram:
     type: http
     behavior: domain
@@ -78,6 +86,7 @@ rules:
   - RULE-SET,custom_telegram,TG
   - RULE-SET,custom_apple,全球代理
   - RULE-SET,custom_google,Google
+  - RULE-SET,custom_tiktok,全球代理
   - RULE-SET,custom_germany,德国服务
   - RULE-SET,custom_proxy,全球代理
   - RULE-SET,custom_direct,DIRECT

@@ -1,0 +1,12 @@
+# 自定义 TikTok 规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_tiktok.yaml
+
+payload:
+  - '+.tiktok.com'
+  - '+.tiktokv.com'
+  - '+.tiktokcdn.com'
+  - '+.tiktokcdn-us.com'
+  - '+.tiktokv.us'
+  - '+.musical.ly'
+  - '+.byteoversea.com'
+  - '+.ibytedtos.com'
