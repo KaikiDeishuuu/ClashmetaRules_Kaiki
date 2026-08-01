@@ -9,10 +9,6 @@ payload:
   - 'openaicom.imgix.net'
   - 'openaicomproductionae4b.blob.core.windows.net'
   
-  # ====== Anthropic / Claude ======
-  - '+.anthropic.com'
-  - '+.claude.ai'
-  
   # ====== xAI / Grok ======
   - '+.x.ai'
   - '+.grok.com'

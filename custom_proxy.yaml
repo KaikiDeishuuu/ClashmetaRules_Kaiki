@@ -25,8 +25,6 @@ payload:
   - '+.openai.com'
   - '+.ai.com'
   - '+.chatgpt.com'
-  - '+.anthropic.com'
-  - '+.claude.ai'
   - '+.perplexity.ai'
   - '+.poe.com'
   - '+.suno.ai'
@@ -41,6 +39,13 @@ payload:
   # ====== 沉浸式翻译 ======
   - '+.immersivetranslate.cn'
   - '+.immersivetranslate.com'
+
+  # ====== Steam 商店 / 登录 / 社区 ======
+  - '+.steampowered.com'
+  - '+.steamcommunity.com'
+  - '+.steamgames.com'
+  - '+.steam-api.com'
+  - '+.valvesoftware.com'
 
   # ====== 开发工具 ======
   - '+.docker.com'

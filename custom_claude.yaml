@@ -1,0 +1,15 @@
+# Claude / Anthropic 专属规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_claude.yaml
+
+payload:
+  # ====== Claude / Anthropic 服务、API 与 Console ======
+  - '+.anthropic.com'
+  - '+.claude.ai'
+  - '+.claude.com'
+
+  # ====== Claude 网页端账单与支付网关 ======
+  # Stripe、hCaptcha 为共享服务；纳入后，其他使用这些服务的网站也会命中本规则集。
+  - '+.stripe.com'
+  - '+.stripecdn.com'
+  - 'm.stripe.network'
+  - '+.hcaptcha.com'

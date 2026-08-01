@@ -96,6 +96,13 @@ payload:
   - '+.zhihu.com'
   - '+.maxim.com.cn'
 
+  # ====== Steam 下载 / CDN ======
+  - '+.steamcontent.com'
+  - '+.steamstatic.com'
+  - '+.steamusercontent.com'
+  - '+.steamvideo.com'
+  - '+.steam.tv'
+
   # ====== Hetzner ======
   - '+.hetzner.com'
   - '+.hetzner.cloud'

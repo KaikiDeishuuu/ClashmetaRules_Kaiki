@@ -8,6 +8,8 @@
 |--------|------|----------|
 | custom_direct.yaml | 直连规则（学术、邮件、香港银行、微软等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_direct.yaml) |
 | custom_proxy.yaml | 代理规则（GitHub、AI、开发工具、加密货币等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_proxy.yaml) |
+| custom_ai.yaml | AI 服务规则（OpenAI、Grok、Perplexity、Mistral 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_ai.yaml) |
+| custom_claude.yaml | Claude / Anthropic 专属规则（含网页支付依赖） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_claude.yaml) |
 | custom_apple.yaml | Apple 规则（iCloud、App Store、Apple Music 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_apple.yaml) |
 | custom_google.yaml | Google/YouTube 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_google.yaml) |
 | custom_telegram.yaml | Telegram 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_telegram.yaml) |
@@ -33,6 +35,20 @@ rule-providers:
     behavior: domain
     url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_proxy.yaml
     path: ./ruleset/custom_proxy.yaml
+    interval: 86400
+
+  custom_ai:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_ai.yaml
+    path: ./ruleset/custom_ai.yaml
+    interval: 86400
+
+  custom_claude:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_claude.yaml
+    path: ./ruleset/custom_claude.yaml
     interval: 86400
 
   custom_apple:
@@ -78,6 +94,8 @@ rule-providers:
     interval: 86400
 ```
 
+> `custom_claude` 包含 Stripe、Stripe CDN 与 hCaptcha 等网页结账依赖。这些是共享服务，因此其他使用它们的网站也会命中 `Claude` 策略组；如不需要网页端支付，可从该规则集中移除对应条目。
+
 在 `rules` 中引用：
 
 ```yaml
@@ -88,6 +106,8 @@ rules:
   - RULE-SET,custom_google,Google
   - RULE-SET,custom_tiktok,全球代理
   - RULE-SET,custom_germany,德国服务
+  - RULE-SET,custom_claude,Claude
+  - RULE-SET,custom_ai,全球代理
   - RULE-SET,custom_proxy,全球代理
   - RULE-SET,custom_direct,DIRECT
   # ... 其他规则
