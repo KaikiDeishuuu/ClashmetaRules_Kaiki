@@ -1,0 +1,46 @@
+# 自定义 Meta 规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_meta.yaml
+
+payload:
+  # Meta / Meta AI
+  - '+.meta.com'
+  - '+.meta.ai'
+
+  # Facebook
+  - '+.facebook.com'
+  - '+.facebook.net'
+  - '+.facebookmail.com'
+  - '+.fb.com'
+  - '+.fb.me'
+  - '+.fb.gg'
+  - '+.fb.watch'
+  - '+.fbwat.ch'
+
+  # Meta shared resources / CDN
+  - '+.fbcdn.net'
+  - '+.fbsbx.com'
+  - '+.fbinfra.net'
+  - '+.tfbnw.net'
+
+  # Instagram / Threads
+  - '+.instagram.com'
+  - '+.instagr.am'
+  - '+.cdninstagram.com'
+  - '+.threads.com'
+  - '+.threads.net'
+
+  # Messenger
+  - '+.messenger.com'
+  - '+.m.me'
+
+  # WhatsApp
+  - '+.whatsapp.com'
+  - '+.whatsapp.net'
+  - '+.wa.me'
+
+  # Meta Quest / Oculus / developer services
+  - '+.oculus.com'
+  - '+.oculuscdn.com'
+  - '+.oculusvr.com'
+  - '+.metaquest.com'
+  - '+.wit.ai'
