@@ -60,6 +60,7 @@ payload:
   - '+.transferwise.com'
 
   # ====== Microsoft / OneDrive ======
+  - '+.microsoft.com'
   - '+.onedrive.com'
   - '+.sharepoint.com'
   - '+.livefilestore.com'
