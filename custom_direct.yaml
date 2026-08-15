@@ -71,6 +71,81 @@ payload:
   - '+.windows.net'
   - '+.bing.com'
 
+  # ====== Microsoft 账号 / 认证 ======
+  - '+.msauth.net'
+  - '+.msauthimages.net'
+  - '+.msftauth.net'
+  - '+.msftauthimages.net'
+  - '+.microsoftonline-p.com'
+  - '+.microsoftonline-p.net'
+  - '+.msidentity.com'
+  - '+.msftidentity.com'
+  - '+.microsoftazuread-sso.com'
+  - '+.phonefactor.net'
+  - '+.gfx.ms'
+  - '+.live.net'
+
+  # ====== Microsoft 365 / Office ======
+  - '+.microsoft365.com'
+  - '+.sharepointonline.com'
+  - '+.office.net'
+  - '+.onenote.com'
+  - '+.onenote.net'
+  - '+.onmicrosoft.com'
+  - '+.svc.ms'
+  - '+.o365weve.com'
+  - '+.outlookmobile.com'
+  - '+.acompli.net'
+  - '+.lync.com'
+
+  # ====== Microsoft 云 / Azure / CDN ======
+  - '+.cloud.microsoft'
+  - '+.static.microsoft'
+  - '+.usercontent.microsoft'
+  - '+.microsoftusercontent.com'
+  - '+.azure.com'
+  - '+.azure.net'
+  - '+.azurewebsites.net'
+  - '+.trafficmanager.net'
+  - '+.azureedge.net'
+  - '+.msecnd.net'
+  - '+.msocdn.com'
+  - '+.aspnetcdn.com'
+  - '+.sfx.ms'
+  - '+.onestore.ms'
+  - '+.microsoftstore.com'
+
+  # ====== Windows ======
+  - '+.windows.com'
+  - '+.msftconnecttest.com'
+
+  # ====== Bing / MSN / 地图 ======
+  - '+.bing.net'
+  - '+.virtualearth.net'
+  - '+.msn.com'
+
+  # ====== Xbox / 游戏 ======
+  - '+.xbox.com'
+  - '+.xboxlive.com'
+  - '+.xboxservices.com'
+  - '+.gamepass.com'
+
+  # ====== Skype ======
+  - '+.skype.com'
+  - '+.skypeassets.com'
+  - '+.s-msn.com'
+
+  # ====== LinkedIn ======
+  - '+.linkedin.com'
+  - '+.licdn.com'
+
+  # ====== Microsoft 开发者资源 ======
+  - '+.visualstudio.com'
+  - '+.vsassets.io'
+  - '+.nuget.org'
+  - '+.dot.net'
+  - '+.aka.ms'
+
   # ====== Dell ======
   - '+.dell.com'
   - '+.dell.com.cn'
