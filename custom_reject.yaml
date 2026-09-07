@@ -2,9 +2,8 @@
 # URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_reject.yaml
 
 payload:
-  # ====== Windows Update & Telemetry ======
-  - '+.windowsupdate.microsoft.com'
-  - '+.update.microsoft.com'
-  - '+.download.windowsupdate.com'
-  - '+.fe2.update.microsoft.com'
-  - '+.mobile.events.data.microsoft.com'
+  # ====== 无效的校园网 WPAD 自动代理发现 ======
+  # 校园 DNS 将该域名解析到 255.255.255.255，连接必然失败。
+  - 'wpad.sustech.edu.cn'
+
+  # Platform update traffic is handled by the proxy rule set.

@@ -1,7 +1,14 @@
 [
   {
+    "port": "443",
+    "outboundTag": "proxy",
+    "network": "udp",
+    "enabled": true,
+    "remarks": "阻断 UDP 443"
+  },
+  {
     "port": "",
-    "outboundTag": "block",
+    "outboundTag": "proxy",
     "domain": [
       "domain:windowsupdate.microsoft.com",
       "domain:update.microsoft.com",
@@ -10,7 +17,7 @@
       "domain:mobile.events.data.microsoft.com"
     ],
     "enabled": true,
-    "remarks": "自定义拦截：Windows Update 与遥测"
+    "remarks": "Microsoft / Windows Update 与遥测（代理）"
   },
   {
     "port": "",
@@ -282,7 +289,36 @@
       "domain:coinbase.com",
       "domain:gate.io",
       "domain:kucoin.com",
-      "domain:crypto.com"
+      "domain:crypto.com",
+      "domain:microsoft.com",
+      "domain:microsoftonline.com",
+      "domain:outlook.com",
+      "domain:hotmail.com",
+      "domain:live.com",
+      "domain:onedrive.com",
+      "domain:sharepoint.com",
+      "domain:livefilestore.com",
+      "domain:officeapps.live.com",
+      "domain:office.com",
+      "domain:office365.com",
+      "domain:msedge.net",
+      "domain:windows.net",
+      "domain:windows.com",
+      "domain:windowsupdate.microsoft.com",
+      "domain:update.microsoft.com",
+      "domain:download.windowsupdate.com",
+      "domain:fe2.update.microsoft.com",
+      "domain:mobile.events.data.microsoft.com",
+      "domain:bing.com",
+      "domain:azure.com",
+      "domain:azureedge.net",
+      "domain:blob.core.windows.net",
+      "domain:xbox.com",
+      "domain:xboxlive.com",
+      "domain:teams.microsoft.com",
+      "domain:skype.com",
+      "domain:visualstudio.com",
+      "domain:vsassets.io"
     ],
     "enabled": true,
     "remarks": "自定义代理"
@@ -318,9 +354,6 @@
       "domain:126.com",
       "domain:yeah.net",
       "domain:foxmail.com",
-      "domain:outlook.com",
-      "domain:hotmail.com",
-      "domain:live.com",
       "domain:me.com",
       "domain:bochk.com",
       "domain:zabank.com",
@@ -338,16 +371,6 @@
       "domain:alipay.hk",
       "domain:wise.com",
       "domain:transferwise.com",
-      "domain:onedrive.com",
-      "domain:sharepoint.com",
-      "domain:livefilestore.com",
-      "domain:officeapps.live.com",
-      "domain:office.com",
-      "domain:office365.com",
-      "domain:microsoftonline.com",
-      "domain:msedge.net",
-      "domain:windows.net",
-      "domain:bing.com",
       "domain:dell.com",
       "domain:dell.com.cn",
       "domain:delltechnologies.com",
@@ -417,6 +440,98 @@
   },
   {
     "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ],
+    "enabled": true,
+    "remarks": "局域网 IP 直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:private"
+    ],
+    "enabled": true,
+    "remarks": "局域网域名直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "223.5.5.5",
+      "223.6.6.6",
+      "2400:3200::1",
+      "2400:3200:baba::1",
+      "119.29.29.29",
+      "1.12.12.12",
+      "120.53.53.53",
+      "2402:4e00::",
+      "2402:4e00:1::",
+      "180.76.76.76",
+      "2400:da00::6666",
+      "114.114.114.114",
+      "114.114.115.115",
+      "114.114.114.119",
+      "114.114.115.119",
+      "114.114.114.110",
+      "114.114.115.110",
+      "180.184.1.1",
+      "180.184.2.2",
+      "101.226.4.6",
+      "218.30.118.6",
+      "123.125.81.6",
+      "140.207.198.6",
+      "1.2.4.8",
+      "210.2.4.8",
+      "52.80.66.66",
+      "117.50.22.22",
+      "2400:7fc0:849e:200::4",
+      "2404:c2c0:85d8:901::4",
+      "117.50.10.10",
+      "52.80.52.52",
+      "2400:7fc0:849e:200::8",
+      "2404:c2c0:85d8:901::8",
+      "117.50.60.30",
+      "52.80.60.30"
+    ],
+    "enabled": true,
+    "remarks": "中国公共 DNS IP 直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "domain:alidns.com",
+      "domain:doh.pub",
+      "domain:dot.pub",
+      "domain:360.cn",
+      "domain:onedns.net"
+    ],
+    "enabled": true,
+    "remarks": "中国公共 DNS 域名直连"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:cn"
+    ],
+    "enabled": true,
+    "remarks": "中国大陆域名直连（须位于非中国规则之前）"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:cn"
+    ],
+    "enabled": true,
+    "remarks": "中国大陆 IP 直连（须位于最终兜底之前）"
+  },
+  {
+    "port": "",
     "outboundTag": "proxy",
     "domain": [
       "geosite:geolocation-!cn"
@@ -434,27 +549,9 @@
     "remarks": "GFW 域名"
   },
   {
-    "port": "",
-    "outboundTag": "direct",
-    "domain": [
-      "geosite:cn"
-    ],
-    "enabled": true,
-    "remarks": "中国大陆域名直连"
-  },
-  {
-    "port": "",
-    "outboundTag": "direct",
-    "ip": [
-      "geoip:cn"
-    ],
-    "enabled": true,
-    "remarks": "中国大陆 IP 直连"
-  },
-  {
     "port": "0-65535",
-    "outboundTag": "proxy",
+    "outboundTag": "direct",
     "enabled": true,
-    "remarks": "最终代理兜底"
+    "remarks": "最终直连兜底"
   }
 ]

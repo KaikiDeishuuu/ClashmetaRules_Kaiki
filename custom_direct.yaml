@@ -34,9 +34,6 @@ payload:
   - '+.126.com'
   - '+.yeah.net'
   - '+.foxmail.com'
-  - '+.outlook.com'
-  - '+.hotmail.com'
-  - '+.live.com'
   - '+.me.com'
 
   # ====== 香港服务 ======
@@ -58,18 +55,6 @@ payload:
   # ====== Wise ======
   - '+.wise.com'
   - '+.transferwise.com'
-
-  # ====== Microsoft / OneDrive ======
-  - '+.onedrive.com'
-  - '+.sharepoint.com'
-  - '+.livefilestore.com'
-  - '+.officeapps.live.com'
-  - '+.office.com'
-  - '+.office365.com'
-  - '+.microsoftonline.com'
-  - '+.msedge.net'
-  - '+.windows.net'
-  - '+.bing.com'
 
   # ====== Dell ======
   - '+.dell.com'
