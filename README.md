@@ -16,6 +16,7 @@
 | custom_meta.yaml | Meta 系服务规则（Facebook、Instagram、Threads、Messenger、WhatsApp、Meta Quest 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_meta.yaml) |
 | custom_telegram.yaml | Telegram 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_telegram.yaml) |
 | custom_tiktok.yaml | TikTok 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_tiktok.yaml) |
+| custom_streaming.yaml | 流媒体通用规则（Netflix/Disney+/YouTube/Spotify/Max/PrimeVideo/Hulu 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_streaming.yaml) |
 | custom_germany.yaml | 德国服务规则（N26、PayPal等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_germany.yaml) |
 | custom_reject.yaml | 拦截规则（当前仅保留无效 WPAD 等规则；微软流量改走代理） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_reject.yaml) |
 
@@ -88,6 +89,13 @@ rule-providers:
     path: ./ruleset/custom_tiktok.yaml
     interval: 86400
 
+  custom_streaming:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_streaming.yaml
+    path: ./ruleset/custom_streaming.yaml
+    interval: 86400
+
   custom_telegram:
     type: http
     behavior: domain
@@ -127,6 +135,7 @@ rules:
   - RULE-SET,custom_google,Google
   - RULE-SET,custom_meta,Meta
   - RULE-SET,custom_tiktok,全球代理
+  - RULE-SET,custom_streaming,流媒体
   - RULE-SET,custom_germany,德国服务
   - RULE-SET,custom_claude,Claude
   - RULE-SET,custom_ai,全球代理

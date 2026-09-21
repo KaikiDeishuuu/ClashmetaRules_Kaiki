@@ -1,0 +1,55 @@
+# 自定义流媒体通用规则集
+# URL: https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_streaming.yaml
+
+payload:
+  # ====== Netflix（主配置中 NF 专用规则优先于本规则集命中）======
+  - '+.netflix.com'
+  - '+.netflix.net'
+  - '+.nflxvideo.net'
+  - '+.nflximg.net'
+  - '+.nflximg.com'
+  - '+.nflxext.com'
+  - '+.nflxso.net'
+  - 'fast.com'
+
+  # ====== Disney+ ======
+  - '+.disneyplus.com'
+  - '+.disney-plus.net'
+  - '+.disneyplay.net'
+  - '+.bamgrid.com'
+  - '+.dssott.com'
+
+  # ====== YouTube / Premium / Music ======
+  - '+.youtube.com'
+  - '+.youtu.be'
+  - '+.ytimg.com'
+  - '+.googlevideo.com'
+  - '+.youtube-nocookie.com'
+  - '+.youtubekids.com'
+
+  # ====== Spotify ======
+  - '+.spotify.com'
+  - '+.scdn.co'
+  - '+.spotifycdn.com'
+
+  # ====== HBO / Max ======
+  - '+.max.com'
+  - '+.hbomax.com'
+  - '+.hbo.com'
+
+  # ====== Prime Video（Amazon 主站流量不在其内）======
+  - '+.primevideo.com'
+
+  # ====== Hulu / Paramount+ / Peacock / Discovery+ ======
+  - '+.hulu.com'
+  - '+.paramountplus.com'
+  - '+.peacocktv.com'
+  - '+.discoveryplus.com'
+
+  # ====== 其他常用 ======
+  - '+.abema.tv'
+  - '+.dazn.com'
+  - '+.espn.com'
+  - '+.tidal.com'
+  - '+.bahamut.com'
+  - '+.tubitv.com'
