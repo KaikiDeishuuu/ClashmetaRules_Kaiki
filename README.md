@@ -16,7 +16,7 @@
 | custom_meta.yaml | Meta 系服务规则（Facebook、Instagram、Threads、Messenger、WhatsApp、Meta Quest 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_meta.yaml) |
 | custom_telegram.yaml | Telegram 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_telegram.yaml) |
 | custom_tiktok.yaml | TikTok 规则 | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_tiktok.yaml) |
-| custom_streaming.yaml | 流媒体通用规则（Netflix/Disney+/YouTube/Spotify/Max/PrimeVideo/Hulu 等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_streaming.yaml) |
+| custom_streaming.yaml | 流媒体通用规则（Netflix/Disney+/Spotify/Max/PrimeVideo/Hulu 等；YouTube 走 custom_google） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_streaming.yaml) |
 | custom_germany.yaml | 德国服务规则（N26、PayPal等） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_germany.yaml) |
 | custom_reject.yaml | 拦截规则（当前仅保留无效 WPAD 等规则；微软流量改走代理） | [链接](https://raw.githubusercontent.com/KaikiDeishuuu/ClashmetaRules_Kaiki/main/custom_reject.yaml) |
 

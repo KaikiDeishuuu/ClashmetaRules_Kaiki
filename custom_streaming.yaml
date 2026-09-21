@@ -19,14 +19,6 @@ payload:
   - '+.bamgrid.com'
   - '+.dssott.com'
 
-  # ====== YouTube / Premium / Music ======
-  - '+.youtube.com'
-  - '+.youtu.be'
-  - '+.ytimg.com'
-  - '+.googlevideo.com'
-  - '+.youtube-nocookie.com'
-  - '+.youtubekids.com'
-
   # ====== Spotify ======
   - '+.spotify.com'
   - '+.scdn.co'
